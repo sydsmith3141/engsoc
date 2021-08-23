@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ontario Tech Engineering Society - Shop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+table, th, td, tr {
+  border: 1px solid black;
+  padding: 5px;
+}
+</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Nav -->
+						<script src="nav.js"></script>
+
+				</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   <h1><span class="close">&times;</span></h1>
+    <b><p id="stockName">Item</p></b>
+    <p id="stockContent"></p>
+  </div>
+
+</div>
+			<!-- Main -->
+				<div class="wrapper style1">
+					<div class="container">
+						<article id="main" class="special">
+<header>
+								<h2><a href="#">Merchandise</a></h2>
+								<p>
+									For purchases email <a href="mailto:marketing.engsoc@ontariotechu.ca">marketing.engsoc@ontariotechu.ca</a></p>
+									<p>Stay tuned for 20/21 merch!</p>
+							</header>
+						</article>
+						<div class="row">
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/crewneck.png" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Crewneck</h3>
+								</header>
+								<p>
+									A comfy crewneck showing off your pride in the Engineering Faculty as a whole.
+								</p>
+								<b>Price:</b> 25$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(1)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/coveralls.png" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Coveralls</h3>
+								</header>
+								<p>
+									Traditional Engineering Coveralls to show off all of the amazing patches you collect.
+								</p>
+								<b>Price:</b> 50$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(2)">Stock</button> 
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/scarf.png" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Engg Scarf</h3>
+								</header>
+								<p>
+									One of a kind scarf showing off the disciplines of engineering offered at Ontario Tech.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(3)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/auto.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Automotive Hoodie</h3>
+								</header>
+								<p>
+									A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(4)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/elec.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Electrical Hoodie</h3>
+								</header>
+								<p>
+									A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(5)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/manufacturing.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Manufacturing Hoodie</h3>
+								</header>
+								<p>
+									A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(6)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/mech.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Mechanical Hoodie</h3>
+								</header>
+								<p>
+									A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(7)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/tron.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Mechatronics Hoodie</h3>
+								</header>
+								<p>
+									A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(8)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/nuke.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Nuclear Hoodie</h3>
+								</header>
+								<p>
+								A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(9)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/soft.jpg" alt="" /></a>
+								<header>
+									<h3>Ontario Tech Software Hoodie</h3>
+								</header>
+								<p>
+								A discipline hoodie to represent your given faculty.
+								</p>
+								<b>Price:</b> 20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(10)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/veronica.png" alt="" /></a>
+								<header>
+									<h3>Veronica Patch</h3>
+								</header>
+								<p>
+									A patch commemorating friendship cemented with Waterloo.
+								</p>
+								<b>Price:</b> 3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(11)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/hardhat.png" alt="" /></a>
+								<header>
+									<h3>Hardhat Patch</h3>
+								</header>
+								<p>
+									The traditional Ontario Tech hardhat patch.
+								</p>
+								<b>Price:</b> 3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(12)">Stock</button> 
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/logo.png" alt="" /></a>
+								<header>
+									<h3>EngSoc Patch</h3>
+								</header>
+								<p>
+									A patch with our mascot, the beloved Veronica the gear, on it in all her toothed glory.
+								</p>
+								<b>Price:</b> 3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(13)">Stock</button>
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/feas.jpg" alt="" /></a>
+								<header>
+									<h3>FEAS Patch</h3>
+								</header>
+								<p>
+									The first of two patches showing off the duality of our faculty, with both FEAS and FESNS.
+								</p>
+								<b>Price:</b> 3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(14)">Stock</button> 
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/fesns.jpg" alt="" /></a>
+								<header>
+									<h3>FESNS Patch</h3>
+								</header>
+								<p>
+									The second of two patches showing off the duality of our faculty, with both FEAS and FESNS.
+								</p>
+								<b>Price:</b> 3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(15)">Stock</button> 
+							</article>
+							<article class="col-3 col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/ESSCO.png" alt="" /></a>
+								<header>
+									<h3>ESSCO Patch</h3>
+								</header>
+								<p>
+									A patch offered by an affiliated organisation, ESSCO, read more about them under conferences.
+								</p>
+								<b>Price:</b> 5$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(16)">Stock</button> 
+							</article>
+						</div>
+							<div class="row">
+							<article class=" single col-3 center-block col-12-mobile special">
+								<a href="#" class="image featured"><img src="images/Pages/Merch/shwa.png" alt="" /></a>
+								<header>
+									<h3>Oshawa Patch</h3>
+								</header>
+								<p>
+									Awarded to those who take a photo in front of an Oshawa Sign, five dollars to non-members but FREE to members.
+								</p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button id="myBtn" onclick="getStock(17)">Stock</button> 
+							</article>
+							
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- Copyright -->
+							<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Ontario Tech Engineering Society. All rights reserved.</li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function getStock(id) {
+				if(id == 1) {
+					document.getElementById("stockName").innerHTML = "Crewneck";
+					var identifier = "Crewneck";
+				} else if (id == 2) {
+					document.getElementById("stockName").innerHTML = "Coveralls";
+					var identifier = "Coverall";
+				} else if (id == 3) {
+					document.getElementById("stockName").innerHTML = "Scarves";
+					var identifier = "Scarves";
+				} else if (id == 4) {
+					document.getElementById("stockName").innerHTML = "Automotive Hoodie";
+					var identifier = "Automotive";
+				} else if (id == 5) {
+					document.getElementById("stockName").innerHTML = "Electrical Hoodie";
+					var identifier = "Electrical";
+				} else if (id == 6) {
+					document.getElementById("stockName").innerHTML = "Manufacturing Hoodie";
+					var identifier = "Manufacturing";
+				} else if (id == 7) {
+					document.getElementById("stockName").innerHTML = "Mechanical Hoodie";
+					var identifier = "Mechanical";
+				} else if (id == 8) {
+					document.getElementById("stockName").innerHTML = "Mechatronics Hoodie";
+					var identifier = "Mechatronics";
+				} else if (id == 9) {
+					document.getElementById("stockName").innerHTML = "Nuclear Hoodie";
+					var identifier = "Nuclear";
+				} else if (id == 10) {
+					document.getElementById("stockName").innerHTML = "Software Hoodie";
+					var identifier = "Software";
+				} else if (id == 11) {
+					document.getElementById("stockName").innerHTML = "Veronica Patch";
+					var identifier = "PatchVeronica";
+				} else if (id == 12) {
+					document.getElementById("stockName").innerHTML = "Hardhat Patch";
+					var identifier = "PatchHardhat";
+				} else if (id == 13) {
+					document.getElementById("stockName").innerHTML = "EngSoc Patch";
+					var identifier = "PatchLogo";
+				} else if (id == 14) {
+					document.getElementById("stockName").innerHTML = "FEAS Patch";
+					var identifier = "PatchFEAS";
+				} else if (id == 15) {
+					document.getElementById("stockName").innerHTML = "FESNS Patch";
+					var identifier = "PatchFESNS";
+				} else if (id == 16) {
+					document.getElementById("stockName").innerHTML = "ESSCO Patch";
+					var identifier = "PatchESSCO";
+				} else if (id == 17) {
+					document.getElementById("stockName").innerHTML = "Dirty Shwa Patch";
+					var identifier = "PatchShaw";
+				}
+				$.ajax({
+        				type: "GET",
+        				url: "inventory.csv",
+        				dataType: "text",
+        				success: function(data) {processData(data,identifier);}
+     			});
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				modal.style.display = "block";
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+					  var modal = document.getElementById("myModal");
+					  modal.style.display = "none";
+				}
+
+				function updateStock(data) {
+					var content = document.getElementById("stockContent");
+					if (data.length < 5) {
+						content.innerHTML = "Currently In Stock: " + data;
+					} else {
+						var someContent = "<table style=\"width:100%\"><tr><th>Size</th><th>Amount</th></tr>";
+						var lines = data.join().split(',');
+						for (var i = 0; i < lines.length; i++)
+						{
+							someContent += '<tr><td>' + lines[i].split(':')[0] + "</td><td>" + lines[i].split(':')[1] + "</td></tr>\n";
+						};
+						someContent += "</table>";
+						content.innerHTML = someContent;
+					}
+					
+				}
+
+				function processData(allText, identifier) {
+    				var allTextLines = allText.split(/\r\n|\n/);
+    				var headers = allTextLines[0].split(',');
+    				var lines = [];
+
+    				for (var i=1; i<allTextLines.length; i++) {
+        				var data = allTextLines[i].split(',');
+        				if (data.length == headers.length && data[0] == identifier) {
+
+            				var tarr = [];
+            				if(data[1] == '0')
+            					tarr.push(data[2]);
+            				else
+                				tarr.push(data[1] + ":" + data[2]);
+            				
+            				lines.push(tarr);
+        				}
+    				}
+    				updateStock(lines);
+				}
+
+
+</script>
+
+	</body>
+</html>

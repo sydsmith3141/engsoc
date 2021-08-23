@@ -1,0 +1,6 @@
+For Website:
+
+- add nesletter/general member sign up
+- Make sure resources folder is updated
+- get dates and events 
+- update shop
