@@ -3,7 +3,8 @@ For Website:
 - add newsletter/general member sign up
 - Make sure resources folder is updated
 - get dates and events
-- update shop prices and merch, how to get them 
+- update shop prices and merch, how to get them
+    - which stuff should be up there.. should there be stuff up there at all
 
 Events:
 - wtf capstone tile and description, date and location
