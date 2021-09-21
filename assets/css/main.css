@@ -33,6 +33,10 @@ body {
 	line-height: 1;
 }
 
+footer img {
+	width:60vw;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -239,13 +243,17 @@ input, select, textarea {
 			.container {
 				width: 1200px;
 			}
-
-		}
+			footer img{
+				width:60vw;
+			}		}
 
 		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: 100%;
+			}
+			footer img{
+				width:60vw;
 			}
 
 		}
@@ -255,6 +263,9 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
+			footer img{
+				width:75vw;
+			}
 
 		}
 
@@ -263,7 +274,9 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
+			footer img{
+				width:75vw;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -271,7 +284,9 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
+			footer img{
+				width:75vw;
+			}
 		}
 
 /* Row */
@@ -1506,8 +1521,8 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
-				display: -webkit-flex; 
-				display: -ms-flexbox; 
+				display: -webkit-flex;
+				display: -ms-flexbox;
 				overflow: hidden;
 			}
 
