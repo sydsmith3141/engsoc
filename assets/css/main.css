@@ -33,6 +33,34 @@ body {
 	line-height: 1;
 }
 
+.women-eng{
+	position:relative;
+}
+
+.women-eng img{
+	position: absolute;
+	top: -1em;
+	left: -10em;
+	opacity: 0.25;
+	z-index: 0;
+}
+
+.women-eng p{
+	z-index: 1;
+}
+
+/* .women-eng::before{
+	content: "";
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background-color: rgba(128, 128, 128, 1);
+	top: 0;
+	left: 0;
+	z-index: 0;
+} */
+
 footer img {
 	width:60vw;
 }
@@ -190,6 +218,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
+		z-index: 0;
 	}
 
 	br.clear {
@@ -2076,7 +2105,8 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #a89c9b;
+		/* HERE SYDNEY */
+		background: #1C0920;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
