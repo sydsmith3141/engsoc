@@ -51,6 +51,22 @@ body {
 	/* text-decoration-color: blue;  */
 }
 
+.my-table tr{
+	color: #ffffff;
+	width:20em;
+	text-align: center;
+	font-weight: 300;
+	padding: 1em 1em 1em 1em;
+}
+
+.my-table td{
+	color: #ffffff;
+	width:20em;
+	text-align: center;
+	font-weight: 300;
+}
+
+
 
 /* .women-eng img{ */
 .club img{
