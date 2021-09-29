@@ -37,6 +37,21 @@ body {
 	position:relative;
 }
 
+.my-table{
+	color: #ffffff;
+	width:20em;
+	text-align: center;
+	font-weight: 300;
+	padding: 1em 1em 1em 1em;
+}
+
+.my-table th{
+	font-weight: 700;
+	text-decoration: underline;
+	/* text-decoration-color: blue;  */
+}
+
+
 /* .women-eng img{ */
 .club img{
 	position: absolute;
@@ -2070,6 +2085,7 @@ input, select, textarea {
 
 			table.default tbody tr {
 				border-top: solid 1px #e5e5e5;
+
 			}
 
 				table.default tbody tr:first-child {
