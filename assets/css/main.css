@@ -1884,7 +1884,7 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 4em 0;
 		}
-/* 
+/*
 		.image sized{
 
 		} */
@@ -2705,6 +2705,11 @@ input, select, textarea {
 				line-height: 1.75em;
 			}
 
+			.mobile {
+				display: block;
+				width: 600px;
+			}
+
 		/* Carousel */
 
 			.carousel {
@@ -2731,6 +2736,11 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 12pt;
 				line-height: 1.5em;
+			}
+
+			.mobile {
+				display: block;
+				width: 450px;
 			}
 
 		/* Wrapper */
@@ -2778,6 +2788,11 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 13pt;
 				line-height: 1.65em;
+			}
+
+			.mobile {
+				display: block;
+				width: 400px;
 			}
 
 			.tweet {
@@ -2838,6 +2853,11 @@ input, select, textarea {
 			hr {
 				top: 3em;
 				margin-bottom: 6em;
+			}
+
+			.mobile {
+				display: block;
+				width: 400px;
 			}
 
 		/* Section/Article */
