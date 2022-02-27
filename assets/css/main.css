@@ -2825,6 +2825,11 @@ input, select, textarea {
 
 /* Mobile */
 
+.mobile {
+	display: block;
+	width: 700px;
+}
+
 	#navPanel, #titleBar {
 		display: none;
 	}
